@@ -18,3 +18,39 @@ section ul {
     font-size: 110%;
   }
   
+  nav a:hover {
+    color: #ff0101;
+  }
+
+  h1 {
+    font-size: 300%;
+  }
+
+  h2 {
+    margin: 5% 10%;
+    font-size: 175%;
+  }
+  
+  .text {
+    margin: 0% 10%;
+  }
+
+  .About-Me {
+    padding: 2%;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  .work {
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .contact-me {
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .resume {
+    padding: 2%;
+    font-family: 'Times New Roman', Times, serif;
+  }
