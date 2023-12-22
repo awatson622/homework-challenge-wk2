@@ -1,56 +1,115 @@
-* {
-    border: rgb(151, 151, 252);
-    margin: 0;
-    padding: 0;
-}
-
+/* Add's color to the entire background of the page */
 body {
-    background-color: rgb(165, 190, 207);
+  background-color: rgb(189, 190, 190);
 }
 
-section ul {
-    margin-left: 5%;
-    font-size: 110%;
-  }
-  
-  nav ul {
-    margin-left: 5%;
-    font-size: 110%;
-  }
-  
-  nav a:hover {
-    color: #ff0101;
-  }
+/* adds background color to my header and padding */
+header {
+  background-color: #a0bee0;
+  padding: 20px;
+}
 
-  h1 {
-    font-size: 300%;
-  }
+/* makes my header font size larger, and adds a margin */
+h1 {
+  font-size: 43px;
+  margin-bottom: 10px;
+}
 
-  h2 {
-    margin: 5% 10%;
-    font-size: 175%;
-  }
-  
-  .text {
-    margin: 0% 10%;
-  }
+h2 {
+  font-size: 32px;
+}
+/* displays my list again, in a horizontal way. No bullet points. and adjusts font size */
 
-  .About-Me {
-    padding: 2%;
-    font-family:'Times New Roman', Times, serif;
-  }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
 
-  .work {
-    padding: 2%;
-    font-family: 'Times New Roman', Times, serif;
-  }
+nav li {
+  margin-right: 20px;
+}
 
-  .contact-me {
-    padding: 2%;
-    font-family: 'Times New Roman', Times, serif;
-  }
+/* changes the color of the fonts within my header when you hover over the words */
+nav a:hover {
+  color: #ff0101;
+}
 
-  .resume {
-    padding: 2%;
-    font-family: 'Times New Roman', Times, serif;
-  }
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-gap: 10px;
+}
+
+.photo-grid a {
+  display: grid;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.photo-link {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.photo-container img {
+  width: 200px;
+  height: auto;
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(103, 103, 103, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-container:hover .indicator {
+  opacity: 1;
+}
+
+/* This code lists the 'contact me' items in a horizontal row, it also adds
+circle bullet points*/
+
+#contact-me ul {
+  display: flex;
+  list-style-type: circle;
+  padding: 5;
+}
+
+#contact-me li {
+  margin-right: 115px;
+}
+
+
+/* This code adds a border to my "Resume" section and hides the text
+until you 'hover' over the area */
+
+#resume {
+  border: 1px solid #000;
+  padding: 20px;
+}
+
+#resume-content {
+  display: none;
+}
+
+#resume:hover #resume-content {
+  display: block;
+}
