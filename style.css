@@ -38,50 +38,16 @@ nav a:hover {
   color: #ff0101;
 }
 
+.photo-link {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .photo-grid {
-  display: grid;
+  display: inline-flex;
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 10px;
-}
-
-.photo-grid a {
-  display: grid;
-}
-
-.photo-grid img {
-  width: 100%;
-  height: auto;
-}
-
-.photo-link {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-
-.photo-container {
-  position: relative;
-  display: inline-block;
-}
-
-.photo-container img {
-  width: 200px;
-  height: auto;
-}
-
-.indicator {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(103, 103, 103, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.photo-container:hover .indicator {
-  opacity: 1;
 }
 
 /* This code lists the 'contact me' items in a horizontal row, it also adds
@@ -96,7 +62,6 @@ circle bullet points*/
 #contact-me li {
   margin-right: 115px;
 }
-
 
 /* This code adds a border to my "Resume" section and hides the text
 until you 'hover' over the area */
